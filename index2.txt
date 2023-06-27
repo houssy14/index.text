@@ -1,0 +1,30 @@
+Algorithme compterVoyelles
+    Variables :
+        phrase : Chaîne de caractères
+        caractere : Caractère
+        nombreVoyelles : Entier
+
+    Début
+        phrase <- ""
+        nombreVoyelles <- 0
+
+        Tant que caractere ≠ '.'
+            caractere <- LireCaractere()
+
+            Si estVoyelle(caractere) Alors
+                nombreVoyelles <- nombreVoyelles + 1
+            Fin Si
+
+        Fin Tant que
+        Afficher "Phrase :", phrase
+        Afficher "Nombre de voyelles :", nombreVoyelles
+    Fin
+Fonction estVoyelle(caractere)
+    Si caractere = 'a' OU caractere = 'e' OU caractere = 'i' OU caractere = 
+    'o' OU caractere = 'u' OU caractere = 'y' OU caractere = 'A' OU caractere = 'E' OU caractere = 'I' 
+    OU caractere = 'O' OU caractere = 'U' OU caractere = 'Y' Alors
+        Retourner Vrai
+    Sinon
+        Retourner Faux
+    Fin Si
+Fin
